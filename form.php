@@ -5,6 +5,9 @@
 </head>
 <body>
     <h1>Welcome to the Interactive Treasure Hunt!</h1>
+    <p>Instance ID: 
+    <?php echo file_get_contents("instance_id.txt"); ?>
+</p>
     <form action="process.php" method="POST">
         <label>Number (e.g., birth year):</label>
         <input type="number" name="user_number" required><br><br>
